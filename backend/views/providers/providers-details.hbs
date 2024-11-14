@@ -1,0 +1,51 @@
+<section class="page-section" id="services">
+    <h1>
+        {{!-- {{prov[0].age}} --}}
+        {{!-- <title></title> --}}
+
+    </h1>
+    <div class="container">
+        <h2 class="text-center mt-0">{{city.city_name}}</h2>
+        <hr class="divider my-4">
+        <div class="table-responsive ">
+            <table class="table table-hover table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">city Code</th>
+                        <th scope="col">city Location</th>
+                        <th scope="col">City Population</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- Loop through the provider data -->
+                    <tr>
+                        <td scope="row">{{id}}</td>
+                        <td scope="row">{{city.city_code}}</td> <!-- Display the age for each provider -->
+                        <td scope="row">{{city.city_location}}</td>
+                        <td scope="row">{{city.city_population}}</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <a href="/providors/edit/{{id}}" class="btn btn-secondary btn-sm">Edit Provider</a>
+
+</section>
+<style>
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        /* Adding a subtle text shadow */
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+        transform: scale(1.05);
+        /* Enlarge the button on hover */
+        transition: transform 0.3s ease-in-out;
+        /* Smooth transition */
+    }
+</style>
