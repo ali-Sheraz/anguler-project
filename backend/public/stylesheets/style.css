@@ -1,0 +1,85 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.modal-confirm {
+  color: #636363;
+  width: 400px;
+}
+
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal-confirm .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+
+.modal-confirm h4 {
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+.modal-confirm .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+.modal-confirm .icon-box {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background: #f8d817;
+  border-radius: 50%;
+  line-height: 60px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-confirm .btn {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  min-width: 150px;
+}
+
+.modal-confirm .btn-info {
+  background-color: #17a2b8;
+  border: none;
+  color: #fff;
+}
+
+.modal-confirm .btn-danger {
+  background-color: #d9534f;
+  border: none;
+  color: #fff;
+}
+
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+  opacity: 0.8;
+}
+
+/* Additional styles */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
