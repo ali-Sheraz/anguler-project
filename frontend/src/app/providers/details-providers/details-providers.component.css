@@ -1,0 +1,11 @@
+/* Define the loading animation */
+@keyframes loadingAnimation {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Apply the loading animation to the "Loading..." text */
+.loading-text {
+    animation: loadingAnimation 1.5s infinite;
+}
