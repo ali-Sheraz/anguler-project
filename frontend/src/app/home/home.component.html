@@ -1,0 +1,34 @@
+<h1>{{title}}</h1>
+  <p [style]="green">{{sum()}}</p>
+  <!-- <input #inputmess type="text" (keyup)="click(inputmess.value)"> -->
+  <!-- <button (click)="click(inputmess.value)">Click Me</button> -->
+  <input #inputmess type="text" (ngModel)="message">
+  <button (click)="click('hi there')">Click Me</button>
+  <h1>{{message}}</h1>
+  <div>
+    <button (click)="toggle()">Click Me</button>
+    <h3 *ngIf="check; then showPublic; else showCheck"></h3>
+    <ng-template #showPublic>
+      <h3>Public message</h3>
+    </ng-template>
+    <ng-template #showCheck>
+      <h3>Local message</h3>
+    </ng-template>
+
+  </div>
+<div>
+  <button (click)="inc()">+</button>
+  <button (click)="dec()">-</button>
+  <table>
+    <ng-container *ngFor="let item of num;index as i;count as c;first as f;last as l;even as e;odd as o">
+      <tr [style]="e ?red:green" style="color:wheat;text-align:center;">
+      <td style="width:50px;"> {{i+1}}</td>
+      <td style="width:100px;">{{item}}</td>
+    </tr>
+    </ng-container>
+  </table>
+</div>
+<div>
+
+</div>
+
