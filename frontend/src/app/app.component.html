@@ -1,0 +1,31 @@
+<div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand me-4" routerLink="/">MEAN Stack</a> <!-- Adjust margin-right for "MEAN Stack" text -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/providers"routerLinkActive="active">Providers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact"routerLinkActive="active">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about"routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login"routerLinkActive="active">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register"routerLinkActive="active">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+</div>

@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Add shadow to the navbar */
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #bbb; /* Light gray color for hover */
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
